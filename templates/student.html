@@ -376,11 +376,20 @@ smooth: true
             })
 
         </script>
+	    <script>
+                $(document).ready(function () {  
+                    $("#close").click(function()
+                    {
+                          $("#main3").toggle();
+                  });
+                });
+              </script>
         <br>
         <h4>学科成绩走势</h4>
         <br>
         <div  id="subject_select"></div><br>
         <button class="btn btn-success" id="acting">展开图示</button>
+	 <button class="btn btn-success" id="close">隐藏显示</button>   
         <div id="main3" style="width: 600px;height:400px;"></div>
 
     </div>
